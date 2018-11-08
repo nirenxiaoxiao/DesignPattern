@@ -5,6 +5,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Factory", "Factory\Factory.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Builder", "Builder\Builder.vcxproj", "{51722331-5401-4AD9-8518-240B9A656DBC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Observer", "Observer\Observer.vcxproj", "{DAF3D152-F7F3-4B53-A010-8281DC806DCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +21,10 @@ Global
 		{51722331-5401-4AD9-8518-240B9A656DBC}.Debug|Win32.Build.0 = Debug|Win32
 		{51722331-5401-4AD9-8518-240B9A656DBC}.Release|Win32.ActiveCfg = Release|Win32
 		{51722331-5401-4AD9-8518-240B9A656DBC}.Release|Win32.Build.0 = Release|Win32
+		{DAF3D152-F7F3-4B53-A010-8281DC806DCC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DAF3D152-F7F3-4B53-A010-8281DC806DCC}.Debug|Win32.Build.0 = Debug|Win32
+		{DAF3D152-F7F3-4B53-A010-8281DC806DCC}.Release|Win32.ActiveCfg = Release|Win32
+		{DAF3D152-F7F3-4B53-A010-8281DC806DCC}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
