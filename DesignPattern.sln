@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithm", "Algorithm", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sort", "Sort\Sort.vcxproj", "{E3372C8F-7D0F-41F1-A35C-5C54485D9249}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CodeLeet", "CodeLeet\CodeLeet.vcxproj", "{A3C13DE7-CA14-4A11-8233-3A00313B1117}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -39,11 +41,16 @@ Global
 		{E3372C8F-7D0F-41F1-A35C-5C54485D9249}.Debug|Win32.Build.0 = Debug|Win32
 		{E3372C8F-7D0F-41F1-A35C-5C54485D9249}.Release|Win32.ActiveCfg = Release|Win32
 		{E3372C8F-7D0F-41F1-A35C-5C54485D9249}.Release|Win32.Build.0 = Release|Win32
+		{A3C13DE7-CA14-4A11-8233-3A00313B1117}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A3C13DE7-CA14-4A11-8233-3A00313B1117}.Debug|Win32.Build.0 = Debug|Win32
+		{A3C13DE7-CA14-4A11-8233-3A00313B1117}.Release|Win32.ActiveCfg = Release|Win32
+		{A3C13DE7-CA14-4A11-8233-3A00313B1117}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E3372C8F-7D0F-41F1-A35C-5C54485D9249} = {EFCC4B57-747A-48EA-9DDA-46606F882955}
+		{A3C13DE7-CA14-4A11-8233-3A00313B1117} = {EFCC4B57-747A-48EA-9DDA-46606F882955}
 	EndGlobalSection
 EndGlobal
