@@ -2,11 +2,17 @@
 #include <iostream>
 #include <map>
 #include <string>
+#include <memory>
 
 using std::cout;
 using std::endl;
 using std::string;
 using std::map;
+using std::shared_ptr;
+
+namespace myc11
+{
+
 
 class Shape
 {
@@ -26,7 +32,7 @@ class ShapeFactory
 {
 public:
 	virtual ~ShapeFactory() ;
-	virtual Shape* Create() = 0;
+	virtual shared_ptr<Shape> Create() = 0;
 	static map<string, ShapeFactory*> factories;
 	
 public:
@@ -40,7 +46,7 @@ public:
 		}
 	};
 
-	static Shape* CreateShape(const string& id) throw(BadShapeCreation)
+	static shared_ptr<Shape> CreateShape(const string& id) throw(BadShapeCreation)
 	{
 		if (factories.find(id) != factories.end())
 		{
@@ -65,9 +71,9 @@ public:
 	int Draw();
 	class Factory:public ShapeFactory
 	{
-		virtual Shape* Create()
+		virtual shared_ptr<Shape> Create()
 		{
-			return new Circle;
+			return std::make_shared<Circle>();
 		}
 		friend class ShapeFactoryInitializer;
 	};
@@ -81,9 +87,9 @@ public:
 	int Draw();
 	class Factory:public ShapeFactory
 	{
-		virtual Shape* Create()
+		virtual shared_ptr<Shape> Create()
 		{
-			return new Square;
+			return std::make_shared<Square>();
 		}
 		friend class ShapeFactoryInitializer;
 	};
@@ -145,4 +151,6 @@ int Square::Draw()
 {
 	cout << __FUNCTION__<<endl;
 	return 0;
+}
+
 }

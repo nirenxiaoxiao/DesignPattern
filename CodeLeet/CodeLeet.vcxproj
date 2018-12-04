@@ -49,7 +49,8 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;inline=__inline;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>true</PreprocessToFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -75,6 +76,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="codeleet.cpp" />
+    <ClCompile Include="macro.cpp" />
+    <ClCompile Include="ngx_rbtree.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LeetCommon.h" />
+    <ClInclude Include="macro.h" />
+    <ClInclude Include="ngx_rbtree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
