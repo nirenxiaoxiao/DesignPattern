@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C37F2C98-0B5A-4A8C-88F3-4CD635050552}</ProjectGuid>
+    <ProjectGuid>{CBE60BFE-CFD5-4EE6-A9D5-15BEA5C329E6}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>c11test</RootNamespace>
+    <RootNamespace>StrTest</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -74,8 +74,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source1.cpp" />
-    <ClCompile Include="test.cpp" />
+    <ClCompile Include="adlist.c" />
+    <ClCompile Include="Dog.cpp" />
+    <ClCompile Include="testConditionVar.cpp" />
+    <ClCompile Include="testgif.cpp" />
+    <ClCompile Include="TestMI.cpp" />
+    <ClCompile Include="testQrCode1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="adlist.h" />
+    <ClInclude Include="Dog.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
